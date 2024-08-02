@@ -32,11 +32,11 @@ const initilaizeDbAndServer = async () => {
 
 initilaizeDbAndServer();
 
-app.get("/todo/allUsers/", async (request, response) => {
-  const getUsersQuery = `SELECT * FROM user`;
-  const allUsers = await db.all(getUsersQuery);
-  response.send(allUsers);
-});
+// app.get("/todo/allUsers/", async (request, response) => {
+//   const getUsersQuery = `SELECT * FROM user`;
+//   const allUsers = await db.all(getUsersQuery);
+//   response.send(allUsers);
+// });
 
 const AuthontecateUser = (request, response, next) => {
   let jwtToken;
