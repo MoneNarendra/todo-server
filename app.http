@@ -1,0 +1,76 @@
+POST http://localhost:3001/createTable/
+Content-Type: application/json
+
+###
+
+GET http://localhost:3001/allUsers/
+
+###
+
+
+POST http://localhost:3001/signIn/
+Content-Type: application/json
+
+{   
+    "username":"narendra11",
+    "name":"Narendra Kumar Mone",
+    "password": "narendra@1503",
+    "gender": "Male"
+}
+
+###
+
+POST http://localhost:3001/logIn/
+Content-Type: application/json
+
+{   
+    "username":"narendra",
+    "password": "narendra@123"
+}
+###
+
+POST http://localhost:3001/todo/add/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im5hcmVuZHJhIiwiaWF0IjoxNzIyNTMyNjIxfQ.3mMydTT5uAqWYNrCgau4Ygg_FWHFmSuCzzuIA10UZsU
+Content-Type: application/json
+
+{   
+    "id":"3",
+    "task": "night all",
+    "isCompleted": "false"
+}
+
+###
+
+GET http://localhost:3001/todo/allTodos/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im5hcmVuZHJhIiwiaWF0IjoxNzIyNTM1MDIwfQ.NTx_SRLRqZkX0uN2fm3CKuIKJv_eHhyF6OVswTkzKJY
+
+
+
+###
+GET http://localhost:3001/todo/userDetails/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im5hcmVuZHJhIiwiaWF0IjoxNzIyNTMyNjIxfQ.3mMydTT5uAqWYNrCgau4Ygg_FWHFmSuCzzuIA10UZsU
+
+
+
+###
+DELETE  http://localhost:3001/todo/deleteUser/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im5hcmVuZHJhIiwiaWF0IjoxNzIyNTMyNjIxfQ.3mMydTT5uAqWYNrCgau4Ygg_FWHFmSuCzzuIA10UZsU
+
+
+###
+
+DELETE http://localhost:3001/todo/delete/2/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im5hcmVuZHJhIiwiaWF0IjoxNzIyNTMyNjIxfQ.3mMydTT5uAqWYNrCgau4Ygg_FWHFmSuCzzuIA10UZsU
+
+
+###
+
+PUT http://localhost:3001/todo/update/3/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im5hcmVuZHJhMTEiLCJpYXQiOjE3MjI0ODk4OTB9.ZioEJ5dfRt4cFy5UcfrOs01OIdPrcJGSa7QzJTKWlzE
+Content-Type: application/json
+
+{   
+    "task": "good night all",
+    "isCompleted": "true"
+}
+###
