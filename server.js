@@ -13,7 +13,7 @@ app.use(express.json());
 app.use(cors());
 
 let db = null;
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3000;
 
 const initilaizeDbAndServer = async () => {
   try {
